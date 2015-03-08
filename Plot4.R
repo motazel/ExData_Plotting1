@@ -1,11 +1,11 @@
-setwd("C:\\Users\\motazel\\OneDrive\\Documents\\Courses\\DataScienceJHUCoursera\\ExploratoryData_Course\\Project1\\ExData_Plotting1")
+setwd("C:\\Users\\motazel\\OneDrive\\Documents\\Courses\\DataScienceJHUCoursera\\ExploratoryData_Course\\Project1\\ExData_Plotting2")
 
 library(dplyr)
 #read data from file "household_power_consumption.txt"
 library(lubridate)
 
 #exdata_data_household_power_consumption <- read.csv("exdata_data_household_power_consumption\\household_power_consumption.txt")
-exdata_data_household_power_consumption = read.table("..\\exdata_data_household_power_consumption\\household_power_consumption.txt", sep=";", stringsAsFactors = FALSE)
+exdata_data_household_power_consumption = read.table("..\\..\\exdata_data_household_power_consumption\\household_power_consumption.txt", sep=";", stringsAsFactors = FALSE)
 
 # column variables are as follows
 
