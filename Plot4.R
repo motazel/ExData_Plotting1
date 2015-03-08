@@ -54,7 +54,7 @@ Sub_metering_3 = as.numeric(exdata_data_household_power_consumption[,9])
 
 
 
-par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(2, 2, 2, 0))
+par(mfrow = c(2, 2), mar = c(4, 1.5, 2, 1.5), oma = c(2, 2, 2, 0))
 with(exdata_data_household_power_consumption, {
   plot(dates, V3, xlab = "", ylab="Global Active Power",pch = 16, type ="n")
   lines(dates, V3)
@@ -66,8 +66,10 @@ with(exdata_data_household_power_consumption, {
   lines(dates, Sub_metering_3, col ="blue")
   legend("topright",col=c("black","red","blue"), lty=c(1,1), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), bty ="n")
     
-  plot(dates, V4, xlab = "datetime", ylab="Global_reactive_power",pch = 16, type ="n")
+  plot(dates, V4, xlab = "datetime", ylab="Global_reactive_power",pch = 16, type ="n", yaxt = "n")
+  axis(side=2, at = c(0,0.1,0.2,0.3,0.4,0.5), labels = TRUE )
   lines(dates, V4, col ="black")
+  
   
 })
 
